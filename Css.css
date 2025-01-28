@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", serif;
+    font-style: normal;
+    width: 100%;
+    height: auto;
+    scroll-behavior: smooth;
+}
+section{
+    min-height: 100vh;
+}
+/*navbar CSS*/
+.navbar-wrapper{
+    display: flex;
+    align-items: center;
+    padding: 15px 50px;
+    box-shadow: #cacaca 0px 1px 15px 1px;
+    position: fixed;
+    background-color: #fff;
+    height: 10vh;
+    width: 100%;
+}
+.navbar-wrapper .unorder-list{
+    display: flex;
+    text-align: center;
+    list-style: none;
+}
+.navbar-wrapper ul li a{
+    text-decoration: none;
+    font-weight: 400;
+    color: #000;
+}
+.navbar-wrapper ul li a:hover{
+    color: #ffffff;
+}
+.navbar-wrapper .logo label{
+    font-size: 20px;
+    text-shadow: #929191 11px 2px 10px;
+    font-weight: 700;
+    font-family: "Pacifico", serif;
+}
+.navbar-wrapper .logo label:hover{
+    color: #ff0000;
+    cursor: pointer;
+}
+.navbar-wrapper .unorder-list li:hover{
+    border: #ff0000 2px solid;
+    border-radius: 10px;
+    color: #fff;
+    box-shadow: 0 0 5px red,
+    0 0 25px red, 0 0 50px red inset;
+}
+
+/*main body*/
+.main-container{
+    display: flex;
+    padding-top: 70px;
+    width: 100%;
+    
+}
+.main-container .bg-image img{
+    border-radius: 0px 0px 50px;
+    z-index: 1;
+}
+.main-container .bg-pera span{
+    font-size: 39px;
+    font-weight: 700;
+}
+.main-container .bg-pera{
+    text-align: justify;
+    align-content: center;
+    padding: 100px;
+}
+.BG-patterns{
+    position: absolute;
+    top: 25rem;
+    z-index: -1;
+    padding-left: 10px;
+}
+/*section-two*/
+.section-two{
+    align-content: center;
+    width: 100%;
+}
+.section-two .secound-container{
+    display: inline-flex;
+}
+.first-element{
+    padding: 100px;
+    text-align: justify;
+}
+.first-element .welcome-title{
+    color:#8a8a8a;
+    font-size: 16px;
+    font-weight: 400;
+}
+.first-element .welcome-title span{
+    font-size: 28px;
+    color: #000;
+    font-weight: 500;
+    line-height: 100px;
+}
+.Secound-element{
+    padding: 250px 0 0 0px;
+}
+.Secound-element .right-element{
+    font-size: 56px;
+    font-family: "Dancing Script", serif;
+}
+.Secound-element .right-element span{
+    font-size: 25px;
+}
+/*Services*/
+.grid-items{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-gap: 10px;
+    padding: 100px 20px 0 20px;
+}
+.service-cunt1{
+    height: auto;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: #cdcdcd 1px 1px 5px;
+    border: #efebeb 2px solid;
+}
+.service-cunt1 img{
+    height: 300px;
+    border-radius: 5px 5px 0px 0px;
+}
+.service-cunt1 .card-Body{
+    text-align: center;
+}
+.service-cunt1 .card-Body button{
+    border-radius: 5px;
+    border: none;
+    padding: 10px;
+    font-family: "Poppins", serif;
+    font-weight: 700;
+    background-color: #ff0000;
+    color: #fff;
+    cursor: pointer;
+}
+/*list service*/
+.list-service{
+    display: inline-flex;
+    align-items: center;
+    padding: 30px 0 0 30px;
+    
+}
+.list-service .list-img img{
+    border-radius: 0 0 0 50px;
+}
+.list-service .service-name p{
+    padding-left: 200px;
+    line-height: 40px;
+    font-family: "poppins" sans-serif;
+    font-weight: 500;
+}
+/*Footer*/
+footer{
+    background-color: #313131;
+    color: #fff;
+    margin-top: 20px;
+    padding: 30px;
+    width: 100%;
+    height: 50vh;
+}
+footer .footer-address{
+    display: flex;
+    justify-content: space-evenly;
+}
+footer .footer-address .add1{
+    width: auto;
+    padding-top: 20px;
+    cursor: pointer;
+}
+footer .footer-address .add1 .text1{
+    font-weight: 600;
+    padding-bottom: 5px;
+}
+footer .footer-address .add1 .text2{
+    font-weight: 100;
+}
+footer .footer-address .add1 .text2 i{
+  width: auto;
+  padding-right: 5px;
+}
+footer .mail-address{
+    display: flex;
+    justify-content: center;
+}
